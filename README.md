@@ -54,41 +54,49 @@ Before you begin, ensure you have the following installed:
 
 ### Backend Setup (Django)
 
-after this -> 
-git clone <y>
-cd <project-directory>
-cd <project-directory>
-2. Set Up the Back-End (Django)
-Install Python Dependencies:
+after this ->  git clone <https://github.com/suca19/fs-assignment-2-2024-71930/>
+cd fs-assignment-2-2024-71930/
 
-It's recommended to create a virtual environment to isolate your Python dependencies:
+# 2. Set Up the Back-End (Django)
 
-bash
-Copy code
+- Install Python Dependencies:
+
+- It's recommended to create a virtual environment to isolate your Python dependencies:
+
+```bash
 python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install the necessary Python dependencies using requirements.txt:
+```
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-bash
-Copy code
+- Install the necessary Python dependencies using requirements.txt:
+
+ ```bash
 pip install -r backend/requirements.txt
-Set Up the Database:
+```
+## Set Up the Database:
 
-Run the migrations to create the necessary tables in the database:
-bash
-Copy code
+- Run the migrations to create the necessary tables in the database:
+
+```bash
 cd backend
+```
+
+```bash
 python manage.py migrate
-Create a Superuser (optional, to access the Django admin interface):
+ ```
 
-bash
-Copy code
+-Create a Superuser (optional, to access the Django admin interface):
+
+ ```bash
 python manage.py createsuperuser
-Start the Django Server:
+ ```
 
-bash
-Copy code
+- Start the Django Server:
+
+```bash
 python manage.py runserver
+```
+
 The back-end will now be running at http://127.0.0.1:8000.
 
 3. Set Up the Front-End (React)
@@ -96,29 +104,33 @@ Install Node.js Dependencies:
 
 Navigate to the front-end directory (if it's separate, e.g., frontend/):
 
-bash
-Copy code
+```bash
 cd frontend
-Install the JavaScript dependencies using either npm or yarn:
+```
 
-Using npm:
-bash
-Copy code
+-Install the JavaScript dependencies using either npm or yarn:
+
+- Using npm:
+    
+```bash
 npm install
-Using yarn:
-bash
-Copy code
-yarn install
-Start the React Development Server:
+```
 
-bash
-Copy code
-npm start   # Or if you're using Yarn: yarn start
-The front-end will now be running at http://localhost:3000.
+- Using yarn:
 
-4. Ensure Front-End Communicates with Back-End
-Make sure the React app is configured to send API requests to the Django back-end running at http://127.0.0.1:8000. If the React app and Django are running on different ports, the API URLs in the React code may need to be updated to point to the back-end server.
+```bash
+ yarn install
+ ```
 
-5. You're All Set!
-The back-end will be available at http://127.0.0.1:8000
-The front-end will be available at http://localhost:3000
+## Start the React Development Server:
+
+```bash
+npm start   
+```
+
+# Or if you're using Yarn: 
+
+ ```bash
+yarn start
+```
+
