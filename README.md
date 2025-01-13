@@ -94,7 +94,7 @@ python manage.py createsuperuser
 - Start the Django Server:
 
 ```bash
-python manage.py runserver
+python3 manage.py runserver
 ```
 
 The back-end will now be running at http://127.0.0.1:8000.
