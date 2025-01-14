@@ -55,7 +55,7 @@ Before you begin, ensure you have the following installed:
 ### Backend Setup (Django)
 
 ```bash
-git clone <https://github.com/suca19/fs-assignment-2-2024-71930/>
+git clone https://github.com/suca19/fs-assignment-2-2024-71930/
 ```
 
 ```bash
@@ -81,13 +81,12 @@ sudo apt install python3
 sudo apt install python3-pip
 ```
 
-- Install Python Dependencies:
+
+- It's recommended to create a virtual environment to isolate your Python dependencies:
 
 ```bash
 python3 -m venv venv
 ```
-
-- It's recommended to create a virtual environment to isolate your Python dependencies:
 
 ```bash
     source venv/bin/activate  # On Windows: venv\Scripts\activate
