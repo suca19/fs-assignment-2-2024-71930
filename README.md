@@ -61,12 +61,17 @@ cd fs-assignment-2-2024-71930/
 
 - Install Python Dependencies:
 
+```bash
+python3 -m venv venv
+```
+
 - It's recommended to create a virtual environment to isolate your Python dependencies:
 
 ```bash
 python3 -m venv venv
 ```
     source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
 - Install the necessary Python dependencies using requirements.txt:
 
@@ -82,15 +87,8 @@ cd backend
 ```
 
 ```bash
-python manage.py migrate
+pip install djangorestframework-simplejwt
  ```
-
--Create a Superuser (optional, to access the Django admin interface):
-
- ```bash
-python manage.py createsuperuser
- ```
-
 - Start the Django Server:
 
 ```bash
