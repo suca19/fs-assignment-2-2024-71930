@@ -54,9 +54,13 @@ Before you begin, ensure you have the following installed:
 
 ### Backend Setup (Django)
 
-after this ->  git clone <https://github.com/suca19/fs-assignment-2-2024-71930/>
-cd fs-assignment-2-2024-71930/
+```bash
+git clone <https://github.com/suca19/fs-assignment-2-2024-71930/>
+```
 
+```bash
+cd fs-assignment-2-2024-71930/
+```
 # 2. Set Up the Back-End (Django)
 
 install python if you don't have it, otherwise discard these steps 
