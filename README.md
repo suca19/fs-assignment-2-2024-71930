@@ -59,6 +59,24 @@ cd fs-assignment-2-2024-71930/
 
 # 2. Set Up the Back-End (Django)
 
+install python if you don't have it, otherwise discard these steps 
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+```bash
+brew install python
+```
+
+```
+sudo apt update
+sudo apt install python3
+```
+```bash
+sudo apt install python3-pip
+```
+
 - Install Python Dependencies:
 
 ```bash
@@ -68,14 +86,12 @@ python3 -m venv venv
 - It's recommended to create a virtual environment to isolate your Python dependencies:
 
 ```bash
-python3 -m venv venv
-```
     source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
 - Install the necessary Python dependencies using requirements.txt:
 
- ```bash
+```bash
 pip install -r backend/requirements.txt
 ```
 ## Set Up the Database:
@@ -89,6 +105,10 @@ cd backend
 ```bash
 pip install djangorestframework-simplejwt
  ```
+
+```bash
+python3 manage.py migrate
+```
 - Start the Django Server:
 
 ```bash
