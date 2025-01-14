@@ -61,7 +61,7 @@ git clone https://github.com/suca19/fs-assignment-2-2024-71930/
 ```bash
 cd fs-assignment-2-2024-71930/
 ```
-# 2. Set Up the Back-End (Django)
+## 2. Set Up the Back-End (Django)
 
 install python if you don't have it, otherwise discard these steps 
 
@@ -98,6 +98,8 @@ python3 -m venv venv
 pip install -r backend/requirements.txt
 ```
 ## Set Up the Database:
+
+# This project uses sqlite3 that is library that provides a lightweight disk-based database that doesn't require a separate server process and allows accessing the database.
 
 - Run the migrations to create the necessary tables in the database:
 
