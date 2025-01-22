@@ -66,12 +66,12 @@ Make sure to check the box that says "Add Python to PATH" during installation.
 Create a virtual environment (recommended): In Command Prompt or PowerShell, navigate to your project directory and create a virtual environment:
 ```bash
 Copy code
-python -m venv venv
+python3 -m venv venv
 ```
 Activate the virtual environment:
 ```bash
 Copy code
-venv\Scripts\activate
+source venv\Scripts\activate
 ```
 Install the necessary Python dependencies: Navigate to the backend folder and install the required libraries:
 ```bash
